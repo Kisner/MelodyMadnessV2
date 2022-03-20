@@ -108,12 +108,8 @@ def ParseData(data):
             'artist_image': image_links
         }
     )
-	print(artist_frame)
+	artist_frame.to_csv('artistData.csv')
 
-
-    # test to ensure raw json data is being correctly pulled via spotify API
-    # with open('test.json', 'w', encoding='utf-8') as f:
-    #     json.dump(results, f, ensure_ascii=False, indent=4)
 #not found route 
 # @app.errorhandler(404)
 # def page_not_found(e):
