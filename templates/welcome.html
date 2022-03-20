@@ -3,7 +3,7 @@
 <html>
     <head>
         <title>Welcome</title>
-        <link href="templates/css/welcome.css" rel="stylesheet" type="text/css"/>
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='welcome.css') }}" />
     </head>
     <div class="container">
         <body>
@@ -15,6 +15,7 @@
                 <div class="click"><p style="font-family: 'Circular Std',serif">
                     Click below to get started:</div>
                 <button class="btn default">
+                    <a href="auth"><img src="static/img/Log_In_With.png"></a>
                 </button>
             </div>
         </body>
